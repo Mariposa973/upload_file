@@ -1,0 +1,82 @@
+input:invalid {
+  border: red solid 1px;
+}
+
+input:valid {
+  border: rgb(0, 255, 0) solid 1px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-top: 0px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  display: block;
+  justify-items: center;
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+
+input {
+  width: 254px;
+}
+
+select {
+  width: 254px;
+}
+
+input[type="submit"] {
+  width: 150px;
+  padding: 10px;
+}
+
+.card {
+  margin: auto;
+  padding: 1em;
+  text-align: right;
+  align-items: center;
+  border-radius: 25px;
+  background: rgb(255, 161, 95);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 161, 95, 1) 35%,
+    rgba(0, 0, 0, 1) 36%,
+    rgba(128, 184, 140, 1) 37%
+  );
+}
+
+.card-title {
+  font-size: xx-large;
+}
+
+.no-gutters{
+  width: 100%;
+}
