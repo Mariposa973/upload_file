@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     //securisation//
     $extension = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
     $extensions_ok = ['jpg', 'jpeg', 'png'];
-    $maxFileSize = 2000000;
+    $maxFileSize = 1048576;
     if ((!in_array($extension, $extensions_ok))) {
         $errors[] = 'Veuillez sélectionner une image de type Jpg ou Jpeg ou Png !';
     }
@@ -92,7 +92,7 @@ if (!empty($_GET['remove_avatar'])) {
             <fieldset class="error-message">
                 <?php
                 if (!empty($errors)) {
-                    unlink($uploadFile);
+                    var_dump($errors);
                 }    ?>
             </fieldset>
         </form>
